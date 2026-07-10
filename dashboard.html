@@ -1,1 +1,117 @@
-<!DOCTYPE html><html><body><h1>Dashboard</h1><a href='pages/customers.html'>Customers</a></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheen Accounting ERP</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f7fb;
+}
+
+.sidebar{
+    width:240px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#1e3a8a;
+    color:white;
+}
+
+.sidebar h2{
+    text-align:center;
+    padding:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+}
+
+.main{
+    margin-left:240px;
+    padding:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.number{
+    font-size:30px;
+    color:#1e3a8a;
+    font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Sheen ERP</h2>
+
+<a href="#">📊 Dashboard</a>
+<a href="pages/customers.html">👥 Customers</a>
+<a href="pages/suppliers.html">🚚 Suppliers</a>
+<a href="pages/inventory.html">📦 Inventory</a>
+<a href="pages/purchase.html">🛒 Purchase</a>
+<a href="pages/sales.html">🧾 Sales</a>
+<a href="pages/reports.html">📈 Reports</a>
+<a href="index.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Today's Sales</h3>
+<div class="number">₹0</div>
+</div>
+
+<div class="card">
+<h3>Today's Purchase</h3>
+<div class="number">₹0</div>
+</div>
+
+<div class="card">
+<h3>Total Customers</h3>
+<div class="number">0</div>
+</div>
+
+<div class="card">
+<h3>Total Products</h3>
+<div class="number">0</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
